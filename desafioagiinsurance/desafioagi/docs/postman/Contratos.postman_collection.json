@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "58d36a02-58bb-44a7-9aed-03c7255e5143",
+		"name": "Contratos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35139486"
+	},
+	"item": [
+		{
+			"name": "Simulacao",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/seguros/simulacao?plano=Prata",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"seguros",
+						"simulacao"
+					],
+					"query": [
+						{
+							"key": "plano",
+							"value": "Prata"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Contratacao",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/seguros/contratar/661f0655-eab1-467d-934b-fb55dbdf5a48?plano=Prata",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"seguros",
+						"contratar",
+						"661f0655-eab1-467d-934b-fb55dbdf5a48"
+					],
+					"query": [
+						{
+							"key": "plano",
+							"value": "Prata"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
